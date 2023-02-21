@@ -286,6 +286,21 @@
   dependencies:
     "@material/elevation" "^14.0.0"
 
+"@material/top-app-bar@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@material/top-app-bar/-/top-app-bar-14.0.0.tgz#54e09247c33f61f8f3e98016990e53102c4a4410"
+  integrity sha512-uPej5vHgZnlSB1+koiA9FnabXrHh3O/Npl2ifpUgDVwHDSOxKvLp2LNjyCO71co1QLNnNHIU0xXv3B97Gb0rpA==
+  dependencies:
+    "@material/animation" "^14.0.0"
+    "@material/base" "^14.0.0"
+    "@material/elevation" "^14.0.0"
+    "@material/ripple" "^14.0.0"
+    "@material/rtl" "^14.0.0"
+    "@material/shape" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "@material/typography" "^14.0.0"
+    tslib "^2.1.0"
+
 "@material/touch-target@^14.0.0":
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/@material/touch-target/-/touch-target-14.0.0.tgz#66b0b61ff14975946cdbf6fad6627bcbc025423d"
@@ -369,6 +384,16 @@
   dependencies:
     "@material/dom" "^14.0.0"
     "@material/ripple" "^14.0.0"
+    "@smui/common" "^7.0.0-beta.0"
+    svelte2tsx "^0.5.12"
+
+"@smui/top-app-bar@^7.0.0-beta.0":
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@smui/top-app-bar/-/top-app-bar-7.0.0-beta.0.tgz#ce41bc8a63be5f9681a051003f848074462a631c"
+  integrity sha512-urwTvK9PTGHu+HxNY9KCTvlCqk6PjRJxL73GoW6UGW5BmjXWd5D49NfPnzl+Vgft3oWY3eKMOUHg5bPtjg5/Fg==
+  dependencies:
+    "@material/feature-targeting" "^14.0.0"
+    "@material/top-app-bar" "^14.0.0"
     "@smui/common" "^7.0.0-beta.0"
     svelte2tsx "^0.5.12"
 
