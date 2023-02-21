@@ -1,13 +1,22 @@
 <script lang="ts">
 	import Header from './Header.svelte';
-    import './styles.css';
+	import './styles.css';
 </script>
 
+<Header />
 
-<div class="app">
-	<Header />
+<main>
+	<slot />
+</main>
 
-	<main>
-		<slot />
-	</main>
-</div>
+<style>
+	/* Hide everything above this component. */
+	:global(#smui-app),
+	:global(body),
+	:global(html) {
+		display: block !important;
+		height: auto !important;
+		width: auto !important;
+		position: static !important;
+	}
+</style>
