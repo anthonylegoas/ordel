@@ -19,4 +19,8 @@
 		width: auto !important;
 		position: static !important;
 	}
+
+	main {
+		padding: 2rem;
+	}
 </style>
