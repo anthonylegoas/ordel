@@ -17,7 +17,7 @@
 			<Button on:click={() => null} class="button-shaped-round" color="secondary">
 				<Label>Log in</Label>
 			</Button>
-			<Button on:click={() => null} variant="raised" class="button-shaped-round">
+			<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
 				<Label>Sign up</Label>
 			</Button>
 		{/if}
