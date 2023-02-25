@@ -9,8 +9,9 @@
 	color: var(--color-text);
 
     --mdc-theme-primary: #843bad;
-    --mdc-theme-secondary: black;
+    --mdc-theme-secondary: #e2c6f3;
     --mdc-theme-background: #fff;
+	--mdc-text-button-label-text-color: black;
 }
 
 body {
