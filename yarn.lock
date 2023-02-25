@@ -288,6 +288,25 @@
     "@material/theme" "^14.0.0"
     tslib "^2.1.0"
 
+"@material/switch@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@material/switch/-/switch-14.0.0.tgz#d302a8786ad7f8809d9bbaf416dcceefb98e833f"
+  integrity sha512-vHVKzbvHVKGSrkMB1lZAl8z3eJ8sPRnSR+DWn+IhqHcTsDdDyly2NNj4i2vTSrEA39CztGqkx0OnKM4vkpiZHw==
+  dependencies:
+    "@material/animation" "^14.0.0"
+    "@material/base" "^14.0.0"
+    "@material/density" "^14.0.0"
+    "@material/dom" "^14.0.0"
+    "@material/elevation" "^14.0.0"
+    "@material/feature-targeting" "^14.0.0"
+    "@material/focus-ring" "^14.0.0"
+    "@material/ripple" "^14.0.0"
+    "@material/rtl" "^14.0.0"
+    "@material/shape" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "@material/tokens" "^14.0.0"
+    tslib "^2.1.0"
+
 "@material/theme@^14.0.0":
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/@material/theme/-/theme-14.0.0.tgz#cbcd7b2116220c44ef8a89c43b068b29d23456ea"
@@ -413,6 +432,18 @@
     "@material/dom" "^14.0.0"
     "@material/ripple" "^14.0.0"
     "@smui/common" "^7.0.0-beta.0"
+    svelte2tsx "^0.5.12"
+
+"@smui/switch@^7.0.0-beta.0":
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@smui/switch/-/switch-7.0.0-beta.0.tgz#9d6c5edb6201e1770da1465b05115e2ad0c5e06e"
+  integrity sha512-+B/YbGg9451n6QElLUnf1lp+tpjawqC43g6Yl7zhbslvxp5tAC02kA3ii+9SxK7+M4LKKygI2vzLQlX5gkUHpQ==
+  dependencies:
+    "@material/feature-targeting" "^14.0.0"
+    "@material/switch" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "@smui/common" "^7.0.0-beta.0"
+    "@smui/ripple" "^7.0.0-beta.0"
     svelte2tsx "^0.5.12"
 
 "@smui/top-app-bar@^7.0.0-beta.0":
