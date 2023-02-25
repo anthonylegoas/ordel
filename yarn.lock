@@ -197,6 +197,22 @@
     "@material/typography" "^14.0.0"
     tslib "^2.1.0"
 
+"@material/checkbox@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@material/checkbox/-/checkbox-14.0.0.tgz#2a28915d297b07052d9286cb429af28c725441b9"
+  integrity sha512-OoqwysCqvj1d0cRmEwVWPvg5OqYAiCFpE6Wng6me/Cahfe4xgRxSPa37WWqsClw20W7PG/5RrYRCBtc6bUUUZA==
+  dependencies:
+    "@material/animation" "^14.0.0"
+    "@material/base" "^14.0.0"
+    "@material/density" "^14.0.0"
+    "@material/dom" "^14.0.0"
+    "@material/feature-targeting" "^14.0.0"
+    "@material/focus-ring" "^14.0.0"
+    "@material/ripple" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "@material/touch-target" "^14.0.0"
+    tslib "^2.1.0"
+
 "@material/density@^14.0.0":
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/@material/density/-/density-14.0.0.tgz#584c4f3468c86c96e361ebe7ba6723f4aa6cd548"
@@ -429,6 +445,16 @@
     "@material/feature-targeting" "^14.0.0"
     "@material/ripple" "^14.0.0"
     "@material/theme" "^14.0.0"
+    "@smui/common" "^7.0.0-beta.0"
+    "@smui/ripple" "^7.0.0-beta.0"
+    svelte2tsx "^0.5.12"
+
+"@smui/checkbox@^7.0.0-beta.0":
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@smui/checkbox/-/checkbox-7.0.0-beta.0.tgz#f57d7635ee2dcd0d1d45b7281b446c60f9331d04"
+  integrity sha512-D/tUcEPj5iWhEenCz43Fqjq/haJlSAt2Fa9mIrKwm+58TcZ2wds1XVdYszaJskH1OdHmEmCyC5701Zel8yG2BQ==
+  dependencies:
+    "@material/checkbox" "^14.0.0"
     "@smui/common" "^7.0.0-beta.0"
     "@smui/ripple" "^7.0.0-beta.0"
     svelte2tsx "^0.5.12"
