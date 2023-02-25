@@ -1,31 +1,40 @@
 <script lang="ts">
 	import { Row, Section, Title } from '@smui/top-app-bar';
 	import Button, { Label } from '@smui/button';
-	import IconButton from '@smui/icon-button';
+	import { Icon } from '@smui/icon-button';
+	import { Logo } from '$lib/cdk';
 
 	$: loggedIn = false;
+
+	const logIn = () => (loggedIn = true);
 </script>
 
 <Row>
 	<Section>
 		<Title class="title">TUX</Title>
+		<Logo />
 	</Section>
 	<Section align="end" toolbar>
-		{#if loggedIn}
-			<IconButton class="material-icons" aria-label="Bookmark this page">bookmark</IconButton>
-		{:else}
-			<Button on:click={() => null} class="button-shaped-round" color="secondary">
-				<Label>Log in</Label>
-			</Button>
-			<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
-				<Label>Sign up</Label>
-			</Button>
-		{/if}
+		<div class="space-around">
+			{#if loggedIn}
+				<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
+					<Icon class="material-icons">account_circle</Icon>
+					<Label>Karine</Label>
+				</Button>
+			{:else}
+				<Button on:click={logIn} class="button-shaped-round">
+					<Label>Log in</Label>
+				</Button>
+				<Button color="secondary" on:click={logIn} variant="unelevated" class="button-shaped-round">
+					<Label>Sign up</Label>
+				</Button>
+			{/if}
+		</div>
 	</Section>
 </Row>
 
 <style>
-	:global(.title) {
-		color: var(--mdc-theme-primary);
+	:global(.space-around > button) {
+		margin: 0 0.25rem;
 	}
 </style>
