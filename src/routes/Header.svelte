@@ -11,9 +11,9 @@
 
 <header>
 	<Row>
-		<Section>
-			<Title class="title">TUX</Title>
+		<Section class="logo">
 			<Logo />
+			<Title>Ordel</Title>
 		</Section>
 		<Section align="end" toolbar>
 			<div class="space-around">
@@ -47,5 +47,11 @@
 
 	:global(.space-around > button) {
 		margin: 0 0.25rem;
+	}
+
+	:global(.mdc-top-app-bar__title) {
+		padding-left: 0;
+		font-size: 1.75rem;
+		padding-bottom: 5px;
 	}
 </style>
