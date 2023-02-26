@@ -12,8 +12,10 @@
 <header>
 	<Row>
 		<Section class="logo">
-			<Logo />
-			<Title>Ordel</Title>
+			<a href="/">
+				<Logo />
+				<Title>Ordel</Title>
+			</a>
 		</Section>
 		<Section align="end" toolbar>
 			<div class="space-around">
@@ -53,5 +55,12 @@
 		padding-left: 0;
 		font-size: 1.75rem;
 		padding-bottom: 5px;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: inherit;
 	}
 </style>
