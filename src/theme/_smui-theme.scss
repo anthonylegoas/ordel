@@ -11,7 +11,21 @@
   $error: color-palette.$red-900
 );
 
+@use '@material/image-list/index' as image-list;
+
 @use '@material/button/index' as mdc-button;
+ 
+.my-image-list-standard {
+  @include image-list.standard-columns(5);
+  max-width: 680px;
+}
+ 
+@media (max-width: 599px) {
+  .my-image-list-standard {
+    @include image-list.standard-columns(3);
+  }
+}
+
 
 .button-shaped-round {
   @include mdc-button.shape-radius(999px);
