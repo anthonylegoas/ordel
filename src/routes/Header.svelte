@@ -44,7 +44,7 @@
 
 <style>
 	header {
-		padding: 0.25rem 1rem;
+		padding: 24px 100px;
 	}
 
 	:global(.space-around > button) {
