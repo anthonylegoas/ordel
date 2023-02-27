@@ -21,6 +21,6 @@
 	}
 
 	main {
-		padding: 2rem;
+		padding: 25px 100px;
 	}
 </style>
