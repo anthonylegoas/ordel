@@ -522,6 +522,19 @@
     "@smui/ripple" "^7.0.0-beta.0"
     svelte2tsx "^0.5.12"
 
+"@smui/paper@^7.0.0-beta.0":
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@smui/paper/-/paper-7.0.0-beta.0.tgz#dc99d673aa8ebc30a75ee839471833a6cbdc6bb6"
+  integrity sha512-0Zi2zyfCzxydnUHKKW7RDSjKfqkw6cekQ1mXzkm8AscUIeOCgysGuPvRjEmizBe9Uzc4radH8+gToPZejmbWVA==
+  dependencies:
+    "@material/elevation" "^14.0.0"
+    "@material/feature-targeting" "^14.0.0"
+    "@material/shape" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "@material/typography" "^14.0.0"
+    "@smui/common" "^7.0.0-beta.0"
+    svelte2tsx "^0.5.12"
+
 "@smui/ripple@^7.0.0-beta.0":
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/@smui/ripple/-/ripple-7.0.0-beta.0.tgz#044576e627f2f8e7eb52d7f2731052c06d0f3822"
