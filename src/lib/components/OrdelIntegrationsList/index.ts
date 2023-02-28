@@ -1,0 +1,1 @@
+export { default as OrdelIntegrationsList } from './OrdelIntegrationsList.svelte'
