@@ -1,0 +1,1 @@
+export { default as OrdelInstructions } from './OrdelInstructions.svelte';
