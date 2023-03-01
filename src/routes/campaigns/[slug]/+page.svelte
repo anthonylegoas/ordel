@@ -1,0 +1,11 @@
+<script lang="ts">
+	import type { PageData } from '../$types';
+
+	export let data: PageData;
+
+	$: str = JSON.stringify(data);
+	console.log(data);
+</script>
+
+<h1>{data.title}</h1>
+<div>{@html str}</div>
