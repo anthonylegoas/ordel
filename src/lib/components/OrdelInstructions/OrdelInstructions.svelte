@@ -6,9 +6,9 @@
 <Paper variant="unelevated">
 	<Content class="paper-content-instructions">
 		<ol>
-			<li><b>Connectez Ordel</b> à une source d'objects à trier</li>
-			<li><b>Créez une campagne</b> de vote avec vos critères</li>
-			<li><b>Diffusez</b> et laissez vos utilisateurs ordonner</li>
+			<li><b>Connect Ordel</b> to a data source</li>
+			<li><b>Create a voting campagn</b> with your order criteria as prompt</li>
+			<li><b>Spread the word</b> and let people order your stuff</li>
 		</ol>
 		<OrdelIntegrationsList />
 	</Content>
