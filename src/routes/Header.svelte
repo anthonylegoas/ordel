@@ -2,7 +2,7 @@
 	import { Row, Section, Title } from '@smui/top-app-bar';
 	import Button, { Label } from '@smui/button';
 	import { Icon } from '@smui/icon-button';
-	import { Logo } from '$lib/cdk';
+	import { Link, Logo } from '$lib/cdk';
 
 	$: loggedIn = false;
 
@@ -19,6 +19,7 @@
 		</Section>
 		<Section align="end" toolbar>
 			<div class="space-around">
+				<Link href="/blog">Blog</Link>
 				{#if loggedIn}
 					<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
 						<Icon class="material-icons">account_circle</Icon>
