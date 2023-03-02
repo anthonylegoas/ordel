@@ -10,44 +10,37 @@
 		{
 			id: 'lfkrskfgl',
 			name: 'Google Drive',
-			logoUrl:
-				'https://img1.freepng.fr/20180526/ckp/kisspng-google-drive-google-logo-google-docs-5b09a332de26e8.4322140515273582589099.jpg'
+			logoUrl: '/logos/g-drive.png'
 		},
 		{
-			id: 'lfkrskfgl',
-			name: 'Google Drive',
-			logoUrl:
-				'https://img1.freepng.fr/20180526/ckp/kisspng-google-drive-google-logo-google-docs-5b09a332de26e8.4322140515273582589099.jpg'
+			id: 'apozierit',
+			name: 'Asana',
+			logoUrl: '/logos/asana.png'
 		},
 		{
-			id: 'lfkrskfgl',
-			name: 'Google Drive',
-			logoUrl:
-				'https://img1.freepng.fr/20180526/ckp/kisspng-google-drive-google-logo-google-docs-5b09a332de26e8.4322140515273582589099.jpg'
+			id: 'mlkflzzo',
+			name: 'Dribbble',
+			logoUrl: '/logos/dribbble.png'
 		},
 		{
-			id: 'lfkrskfgl',
-			name: 'Google Drive',
-			logoUrl:
-				'https://img1.freepng.fr/20180526/ckp/kisspng-google-drive-google-logo-google-docs-5b09a332de26e8.4322140515273582589099.jpg'
-		},
-		{
-			id: 'lfkrskfgl',
-			name: 'Trello',
-			logoUrl:
-				'https://img1.freepng.fr/20180526/ckp/kisspng-google-drive-google-logo-google-docs-5b09a332de26e8.4322140515273582589099.jpg'
-		},
-		{
-			id: 'lfkrskfgl',
+			id: 'lfmkfggfpzl',
 			name: 'Gitlab',
-			logoUrl:
-				'https://img1.freepng.fr/20180526/ckp/kisspng-google-drive-google-logo-google-docs-5b09a332de26e8.4322140515273582589099.jpg'
+			logoUrl: '/logos/gitlab.png'
 		},
 		{
-			id: 'lfkrskfgl',
-			name: 'Dropbox',
-			logoUrl:
-				'https://img1.freepng.fr/20180526/ckp/kisspng-google-drive-google-logo-google-docs-5b09a332de26e8.4322140515273582589099.jpg'
+			id: 'okvlkfssq',
+			name: 'Notion',
+			logoUrl: '/logos/notion.png'
+		},
+		{
+			id: 'vsdqcvuis',
+			name: 'Trello',
+			logoUrl: '/logos/trello.png'
+		},
+		{
+			id: 'pfosdlvzaa',
+			name: 'Twitter',
+			logoUrl: '/logos/twitter.png'
 		}
 	];
 </script>
@@ -62,13 +55,14 @@
 
 <style>
 	img {
-		height: 32px;
-		width: 32px;
+		height: auto;
+		width: 24px;
 		padding: 0 6px;
 	}
 
 	ul {
 		display: block;
+		padding: 0 12px;
 		list-style: none;
 		display: flex;
 		flex-direction: row;
