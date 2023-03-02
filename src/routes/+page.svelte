@@ -9,8 +9,8 @@
 </svelte:head>
 
 <section>
-	<h1>Nouvel Ordel Mondial</h1>
-	<h2>Avec Ordel, ordonner une liste d'objets n'a jamais été aussi simple.</h2>
+	<h1>New World Ordel</h1>
+	<h2>It's now easier to order things. All kinds of things.</h2>
 	<Banner />
 	<OrdelInstructions />
 </section>
