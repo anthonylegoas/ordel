@@ -7,7 +7,7 @@
 	<Content class="paper-content-instructions">
 		<ol>
 			<li><b>Connect Ordel</b> to a data source</li>
-			<li><b>Create a voting campagn</b> with your order criteria as prompt</li>
+			<li><b>Create a voting campaign</b> with your order criteria as prompt</li>
 			<li><b>Spread the word</b> and let people order your stuff</li>
 		</ol>
 		<OrdelIntegrationsList />
