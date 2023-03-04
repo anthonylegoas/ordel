@@ -1,4 +1,4 @@
-import { writable, derived } from "svelte/store";
+import { writable, derived, readable } from "svelte/store";
 
 interface Campaign {
     id: string;
@@ -47,7 +47,7 @@ const _campaigns: Campaign[] = [
 ];
 
 function createCampaignsStore() {
-    const campaigns = writable(_campaigns);
+    const campaigns = readable(_campaigns);
     const showArchivedCampaigns = writable(false);
     const showExpiredCampaigns = writable(false);
     const selectedCampaign = writable(_campaigns[0]);
