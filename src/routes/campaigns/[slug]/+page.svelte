@@ -1,8 +1,7 @@
 <script lang="ts">
-	import Button, { Label } from '@smui/button';
 	import type { PageData } from '../$types';
 	import { campaignsStore } from '$lib/store';
-	import { Banner } from '$lib/cdk';
+	import { Banner, Link } from '$lib/cdk';
 
 	type CampaignPageData = { campaignId: string } & PageData;
 
@@ -17,9 +16,7 @@
 		<p class="description">{campaign.description}</p>
 		<div>
 			<Banner />
-			<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
-				<Label>Start voting</Label>
-			</Button>
+			<Link href={`/campaigns/${data.campaignId}/vote`} primary>Start voting</Link>
 			<p>Click on the proposal you wish to retain (or use its keyboard shortcut)</p>
 		</div>
 	{:else}
