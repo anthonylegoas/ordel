@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Row, Section } from '@smui/top-app-bar';
 	import Button, { Label } from '@smui/button';
+	import { Link } from '$lib/cdk';
 
 	import Switch from '@smui/switch';
 	import FormField from '@smui/form-field';
@@ -58,7 +59,7 @@
 					<div class="campaign-list-infos">
 						<p class="nb-objects">{campaign.objects.length} objects</p>
 						<p>{campaign.name}</p>
-						<p class="link">{campaign.objects}</p>
+						<Link href={`/campaigns/${campaign.id}`}>/{campaign.id}</Link>
 					</div>
 				</Item>
 			{/each}
@@ -110,12 +111,7 @@
 		margin: 0;
 	}
 
-	.nb-objects,
-	.link {
+	.nb-objects {
 		font-size: 0.75rem;
-	}
-
-	.link {
-		color: var(--mdc-theme-primary);
 	}
 </style>
