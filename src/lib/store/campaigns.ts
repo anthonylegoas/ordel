@@ -1,12 +1,17 @@
 import { writable, derived, readable } from "svelte/store";
 
-interface Campaign {
+export interface Campaign {
     id: string;
     name: string;
     description: string;
-    objects: Number[]
+    objects: CampaignObject[]
     archived: boolean;
     expired: boolean;
+}
+
+export interface CampaignObject {
+    id: string;
+    imageUrl: string;
 }
 
 const _campaigns: Campaign[] = [
@@ -15,7 +20,16 @@ const _campaigns: Campaign[] = [
         name: 'Campaign n°1',
         description:
             'Sit voluptate ex nisi excepteur magna proident labore est nulla qui aute occaecat nisi officia.',
-        objects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12],
+        objects: [
+            {
+                id: "lcksdlvdkl",
+                imageUrl: "https://img.freepik.com/photos-gratuite/concept-bureau-affaires-minimaliste-angle-eleve_23-2149073016.jpg?w=2000"
+            },
+            {
+                id: "d:v;dv:;",
+                imageUrl: "https://cdn.create.vista.com/api/media/small/240763084/stock-photo-workplace-green-plant-photo-frame"
+            }
+        ],
         archived: false,
         expired: false,
     },
@@ -23,7 +37,16 @@ const _campaigns: Campaign[] = [
         id: "mamqsvmldfb",
         name: 'Campaign n°2',
         description: 'Incididunt ea est ea deserunt quis labore elit.',
-        objects: [1, 2, 3, 4, 5],
+        objects: [
+            {
+                id: "lcksdlvdkl",
+                imageUrl: "https://img.freepik.com/photos-gratuite/concept-bureau-affaires-minimaliste-angle-eleve_23-2149073016.jpg?w=2000"
+            },
+            {
+                id: "d:v;dv:;",
+                imageUrl: "https://cdn.create.vista.com/api/media/small/240763084/stock-photo-workplace-green-plant-photo-frame"
+            }
+        ],
         archived: false,
         expired: false,
     },
@@ -31,7 +54,7 @@ const _campaigns: Campaign[] = [
         id: "vreozeopv",
         name: 'Campaign n°3',
         description: 'Laborum sint ullamco est sit officia qui Lorem et.',
-        objects: [1, 2, 3, 4],
+        objects: [],
         archived: false,
         expired: true,
     },
@@ -40,7 +63,7 @@ const _campaigns: Campaign[] = [
         name: 'Campaign n°4',
         description:
             'Do cupidatat sint tempor ex labore consequat in incididunt eiusmod excepteur deserunt sit.',
-        objects: [1, 2, 3, 4, 5, 6, 7, 8],
+        objects: [],
         archived: true,
         expired: false,
     }
