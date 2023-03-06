@@ -21,6 +21,7 @@
 			<div class="space-around">
 				<Link href="/blog">Blog</Link>
 				{#if loggedIn}
+					<Link href="/campaigns">My campaigns</Link>
 					<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
 						<Icon class="material-icons">account_circle</Icon>
 						<Label>Karine</Label>
