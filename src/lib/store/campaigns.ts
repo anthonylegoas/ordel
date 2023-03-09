@@ -28,6 +28,18 @@ const _campaigns: Campaign[] = [
             {
                 id: "d:v;dv:;",
                 imageUrl: "https://cdn.create.vista.com/api/media/small/240763084/stock-photo-workplace-green-plant-photo-frame"
+            },
+            {
+                id: "sjegkdhge",
+                imageUrl: "https://cdn.shopify.com/s/files/1/2268/9819/products/MD019-White-1-AGTC_Computer_Desk_White_A_3744x.jpg?v=1619537177"
+            },
+            {
+                id: "kzdevazaaa",
+                imageUrl: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRlc2t8ZW58MHx8MHx8&w=1000&q=80"
+            },
+            {
+                id: "pofpooooo",
+                imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYidFadplZdDqXkGY85UD3ToybEfc8sAgog&usqp=CAU"
             }
         ],
         archived: false,
@@ -45,6 +57,18 @@ const _campaigns: Campaign[] = [
             {
                 id: "d:v;dv:;",
                 imageUrl: "https://cdn.create.vista.com/api/media/small/240763084/stock-photo-workplace-green-plant-photo-frame"
+            },
+            {
+                id: "sjegkdhge",
+                imageUrl: "https://cdn.shopify.com/s/files/1/2268/9819/products/MD019-White-1-AGTC_Computer_Desk_White_A_3744x.jpg?v=1619537177"
+            },
+            {
+                id: "kzdevazaaa",
+                imageUrl: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRlc2t8ZW58MHx8MHx8&w=1000&q=80"
+            },
+            {
+                id: "pofpooooo",
+                imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYidFadplZdDqXkGY85UD3ToybEfc8sAgog&usqp=CAU"
             }
         ],
         archived: false,
@@ -54,7 +78,26 @@ const _campaigns: Campaign[] = [
         id: "vreozeopv",
         name: 'Campaign n°3',
         description: 'Laborum sint ullamco est sit officia qui Lorem et.',
-        objects: [],
+        objects: [{
+            id: "lcksdlvdkl",
+            imageUrl: "https://img.freepik.com/photos-gratuite/concept-bureau-affaires-minimaliste-angle-eleve_23-2149073016.jpg?w=2000"
+        },
+        {
+            id: "d:v;dv:;",
+            imageUrl: "https://cdn.create.vista.com/api/media/small/240763084/stock-photo-workplace-green-plant-photo-frame"
+        },
+        {
+            id: "sjegkdhge",
+            imageUrl: "https://cdn.shopify.com/s/files/1/2268/9819/products/MD019-White-1-AGTC_Computer_Desk_White_A_3744x.jpg?v=1619537177"
+        },
+        {
+            id: "kzdevazaaa",
+            imageUrl: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRlc2t8ZW58MHx8MHx8&w=1000&q=80"
+        },
+        {
+            id: "pofpooooo",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYidFadplZdDqXkGY85UD3ToybEfc8sAgog&usqp=CAU"
+        }],
         archived: false,
         expired: true,
     },
@@ -63,7 +106,26 @@ const _campaigns: Campaign[] = [
         name: 'Campaign n°4',
         description:
             'Do cupidatat sint tempor ex labore consequat in incididunt eiusmod excepteur deserunt sit.',
-        objects: [],
+        objects: [{
+            id: "lcksdlvdkl",
+            imageUrl: "https://img.freepik.com/photos-gratuite/concept-bureau-affaires-minimaliste-angle-eleve_23-2149073016.jpg?w=2000"
+        },
+        {
+            id: "d:v;dv:;",
+            imageUrl: "https://cdn.create.vista.com/api/media/small/240763084/stock-photo-workplace-green-plant-photo-frame"
+        },
+        {
+            id: "sjegkdhge",
+            imageUrl: "https://cdn.shopify.com/s/files/1/2268/9819/products/MD019-White-1-AGTC_Computer_Desk_White_A_3744x.jpg?v=1619537177"
+        },
+        {
+            id: "kzdevazaaa",
+            imageUrl: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRlc2t8ZW58MHx8MHx8&w=1000&q=80"
+        },
+        {
+            id: "pofpooooo",
+            imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMYidFadplZdDqXkGY85UD3ToybEfc8sAgog&usqp=CAU"
+        }],
         archived: true,
         expired: false,
     }
