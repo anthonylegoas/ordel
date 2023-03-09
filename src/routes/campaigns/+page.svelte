@@ -69,10 +69,10 @@
 		<h2>{$selectedCampaign.name}</h2>
 		<p>{$selectedCampaign.description}</p>
 		<ImageList class="my-image-list-standard">
-			{#each $selectedCampaign.objects as _unused, i}
+			{#each $selectedCampaign.objects as obj, i}
 				<Item>
 					<ImageAspectContainer>
-						<Image src="https://place-hold.it/190x238?text=4x5&fontsize=23" alt="Image {i + 1}" />
+						<Image src={obj.imageUrl} alt="" />
 					</ImageAspectContainer>
 					<Supporting>
 						<Label>{i + 1} votes</Label>
