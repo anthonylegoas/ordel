@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import './styles.css';
 </script>
@@ -8,6 +9,8 @@
 <main>
 	<slot />
 </main>
+
+<Footer />
 
 <style>
 	/* Hide everything above this component. */
