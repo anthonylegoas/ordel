@@ -4,4 +4,5 @@
 
 <footer>
 	<Link href="/about">About Ordel</Link>
+	<Link href="/terms-of-service">Terms of service</Link>
 </footer>
