@@ -50,15 +50,19 @@
 	}
 
 	:global(.mdc-top-app-bar__title) {
-		padding-left: 0;
-		font-size: 1.75rem;
-		padding-bottom: 5px;
+		padding-left: 0 !important;
+		font-size: 1.75rem !important;
+		padding-bottom: 5px !important;
 	}
 
 	a {
 		display: flex;
 		align-items: center;
 		text-decoration: none;
-		color: inherit;
+		color: black;
+	}
+
+	a:visited {
+		color: black;
 	}
 </style>
