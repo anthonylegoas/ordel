@@ -26,6 +26,10 @@ body {
 	);
 }
 
+header, footer {
+	padding: 24px 100px;
+}
+
 .mdc-button__label {
     text-transform: none;
 }
