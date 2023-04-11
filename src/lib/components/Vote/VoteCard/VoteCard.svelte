@@ -2,13 +2,18 @@
 	import Card, { PrimaryAction, Media, Actions, ActionIcons } from '@smui/card';
 	import IconButton from '@smui/icon-button';
 	import Button, { Label } from '@smui/button';
+	import VoteCardZoomDialog from './VoteCardZoomDialog.svelte';
 	import { createEventDispatcher } from 'svelte';
 	import type { CampaignObject } from '$lib/store';
 
 	export let proposal: CampaignObject;
+	export let proposalIndex: number;
+	let zoomDialogOpened = false;
 
 	const dispatch = createEventDispatcher();
 	const cardSelectedHandler = () => dispatch('proposalVoted', { proposal });
+	const cardActionsZoomHandler = () => (zoomDialogOpened = true);
+	const closeModalHandler = () => (zoomDialogOpened = false);
 </script>
 
 <Card style="min-width: 42%; padding: 18px 18px 0px 18px;">
@@ -19,19 +24,26 @@
 			style={`background-image: url(${proposal.imageUrl});`}
 		/>
 		<div class="voteBtn">
-			<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
+			<Button on:click={cardSelectedHandler} variant="unelevated" class="button-shaped-round">
 				<Label>Choose this one</Label>
 			</Button>
 		</div>
 	</PrimaryAction>
 	<Actions>
 		<ActionIcons>
-			<IconButton class="material-icons" on:click={() => null} title="Zoom"
+			<IconButton class="material-icons" on:click={cardActionsZoomHandler} title="Zoom"
 				><span class="material-symbols-outlined"> zoom_out_map </span></IconButton
 			>
 		</ActionIcons>
 	</Actions>
 </Card>
+
+<VoteCardZoomDialog
+	imageUrl={proposal.imageUrl}
+	open={zoomDialogOpened}
+	{proposalIndex}
+	on:closeModal={closeModalHandler}
+/>
 
 <style>
 	.voteBtn {
