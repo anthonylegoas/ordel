@@ -1,25 +1,23 @@
 <script lang="ts">
-	import Card, { Content, PrimaryAction, Media, Actions, ActionIcons } from '@smui/card';
+	import Card, { PrimaryAction, Media, Actions, ActionIcons } from '@smui/card';
 	import IconButton from '@smui/icon-button';
 	import Button, { Label } from '@smui/button';
 	import { createEventDispatcher } from 'svelte';
 	import type { CampaignObject } from '$lib/store';
 
 	export let proposal: CampaignObject;
-	export let proposalIndex: number;
 
 	const dispatch = createEventDispatcher();
 	const cardSelectedHandler = () => dispatch('proposalVoted', { proposal });
 </script>
 
-<Card style="min-width: 42%;">
+<Card style="min-width: 42%; padding: 18px 18px 0px 18px;">
 	<PrimaryAction on:click={cardSelectedHandler} class="voteImg">
 		<Media
 			class="card-media-16x9"
 			aspectRatio="16x9"
 			style={`background-image: url(${proposal.imageUrl});`}
 		/>
-		<Content class="mdc-typography--body2">Proposal {proposalIndex}</Content>
 		<div class="voteBtn">
 			<Button on:click={() => null} variant="unelevated" class="button-shaped-round">
 				<Label>Choose this one</Label>
