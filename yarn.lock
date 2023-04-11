@@ -234,6 +234,27 @@
   dependencies:
     tslib "^2.1.0"
 
+"@material/dialog@^14.0.0":
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/@material/dialog/-/dialog-14.0.0.tgz#d24d1c1441de343c6615bbc5dfedb068f7e86c05"
+  integrity sha512-E07NEE4jP8jHaw/y2Il2R1a3f4wDFh2sgfCBtRO/Xh0xxJUMuQ7YXo/F3SAA8jfMbbkUv/PHdJUM3I3HmI9mAA==
+  dependencies:
+    "@material/animation" "^14.0.0"
+    "@material/base" "^14.0.0"
+    "@material/button" "^14.0.0"
+    "@material/dom" "^14.0.0"
+    "@material/elevation" "^14.0.0"
+    "@material/feature-targeting" "^14.0.0"
+    "@material/icon-button" "^14.0.0"
+    "@material/ripple" "^14.0.0"
+    "@material/rtl" "^14.0.0"
+    "@material/shape" "^14.0.0"
+    "@material/theme" "^14.0.0"
+    "@material/tokens" "^14.0.0"
+    "@material/touch-target" "^14.0.0"
+    "@material/typography" "^14.0.0"
+    tslib "^2.1.0"
+
 "@material/dom@^14.0.0":
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/@material/dom/-/dom-14.0.0.tgz#dad6908ea26f7cb21b1078f58ec04bd897c615c4"
@@ -504,6 +525,25 @@
     "@material/dom" "^14.0.0"
     "@tsconfig/svelte" "^3.0.0"
     svelte2tsx "^0.5.12"
+
+"@smui/common@^7.0.0-beta.3":
+  version "7.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@smui/common/-/common-7.0.0-beta.3.tgz#c9de40266026aa195223023e47b86775e17948a8"
+  integrity sha512-77tKJ+dvKbas2tNeHhovq6Yg3OJ78FS2Jky8QZXNsF5uOKbI/gZ6OXYRTEmudfKANP6xHCtFdpgbk1JF1VdHeA==
+  dependencies:
+    "@material/dom" "^14.0.0"
+    svelte2tsx "^0.6.10"
+
+"@smui/dialog@^7.0.0-beta.3":
+  version "7.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@smui/dialog/-/dialog-7.0.0-beta.3.tgz#b47ff3a60ea78b4a614d0aeda1406371eeecaea3"
+  integrity sha512-Fysm1SUdw+1H6dUajcEyNLcHFcPg+zJjxJtwgvffYC8BtUD1QYyTW4NBkSCXRWEiwsBxA4GDzyNEQIkQ864Wyw==
+  dependencies:
+    "@material/button" "^14.0.0"
+    "@material/dialog" "^14.0.0"
+    "@material/dom" "^14.0.0"
+    "@smui/common" "^7.0.0-beta.3"
+    svelte2tsx "^0.6.10"
 
 "@smui/form-field@^7.0.0-beta.0":
   version "7.0.0-beta.0"
@@ -1987,6 +2027,14 @@ svelte2tsx@^0.5.12:
   version "0.5.23"
   resolved "https://registry.yarnpkg.com/svelte2tsx/-/svelte2tsx-0.5.23.tgz#e20c464b3250f97902994d3784a57e87ca86a849"
   integrity sha512-jYFnugTQRFmUpvLXPQrKzVYcW5ErT+0QCxg027Zx9BuvYefMZFuoBSTDYe7viPEFGrPPiLgT2m7f5n9khE7f7Q==
+  dependencies:
+    dedent-js "^1.0.1"
+    pascal-case "^3.1.1"
+
+svelte2tsx@^0.6.10:
+  version "0.6.11"
+  resolved "https://registry.yarnpkg.com/svelte2tsx/-/svelte2tsx-0.6.11.tgz#f9ae52adc40d3b0dfbd79a5178dd0a9f885176ad"
+  integrity sha512-rRW/3V/6mcejYWmSqcHpmILOSPsOhLgkbKbrTOz82s2n8TywmIsqj2jYPsiL6HeGoUM/atiTD0YKguW4b7ECog==
   dependencies:
     dedent-js "^1.0.1"
     pascal-case "^3.1.1"
