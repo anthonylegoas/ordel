@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Campaign } from '$lib/store';
 	import { Section as OrdelSection } from '$lib/cdk';
-	import { CampaignStatsParticipation } from './CampaignsStats';
+	import { CampaignStatsParticipation, CampaignStatsRanking } from './CampaignsStats';
 
 	export let campaign: Campaign;
 </script>
@@ -10,9 +10,7 @@
 	<h2>{campaign.name}</h2>
 	<p>{campaign.description}</p>
 	<CampaignStatsParticipation {campaign} />
-	<OrdelSection title="Rankings" subtitle="700+ votes">
-		<p>to do</p>
-	</OrdelSection>
+	<CampaignStatsRanking {campaign} />
 	<OrdelSection title="Objects" subtitle="{campaign.objects.length} objects">
 		<ul>
 			{#each campaign.objects as obj}
