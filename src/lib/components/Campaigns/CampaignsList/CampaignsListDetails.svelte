@@ -1,7 +1,10 @@
 <script lang="ts">
 	import type { Campaign } from '$lib/store';
-	import { Section as OrdelSection } from '$lib/cdk';
-	import { CampaignStatsParticipation, CampaignStatsRanking } from './CampaignsStats';
+	import {
+		CampaignStatsObjects,
+		CampaignStatsParticipation,
+		CampaignStatsRanking
+	} from './CampaignsStats';
 
 	export let campaign: Campaign;
 </script>
@@ -11,15 +14,7 @@
 	<p>{campaign.description}</p>
 	<CampaignStatsParticipation {campaign} />
 	<CampaignStatsRanking {campaign} />
-	<OrdelSection title="Objects" subtitle="{campaign.objects.length} objects">
-		<ul>
-			{#each campaign.objects as obj}
-				<li>
-					<img src={obj.imageUrl} alt="" style="width: 150px; height: 150px;" />
-				</li>
-			{/each}
-		</ul>
-	</OrdelSection>
+	<CampaignStatsObjects {campaign} />
 </div>
 
 <style>
@@ -27,17 +22,5 @@
 		background-color: white;
 		padding: 1rem;
 		width: 60%;
-	}
-
-	ul {
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100%;
-		padding: 0;
-	}
-
-	li {
-		margin: 5px;
 	}
 </style>
