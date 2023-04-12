@@ -41,3 +41,7 @@ header, footer {
 .mdc-deprecated-list-item {
 	height: 100px;
 }
+
+h4 {
+	font-size: .75rem;
+}
