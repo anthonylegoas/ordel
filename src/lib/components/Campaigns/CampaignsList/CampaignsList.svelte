@@ -37,6 +37,7 @@
 				<Item
 					on:SMUI:action={() => selectCampaign(campaign)}
 					selected={$selectedCampaign.name === campaign.name}
+					style="height:auto"
 				>
 					<div class="campaign-list-infos">
 						<p class="nb-objects">{campaign.objects.length} objects</p>
