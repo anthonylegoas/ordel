@@ -3,8 +3,9 @@
 	import Switch from '@smui/switch';
 	import FormField from '@smui/form-field';
 	import List, { Item } from '@smui/list';
-	import { Link, Section as OrdelSection } from '$lib/cdk';
+	import { Link } from '$lib/cdk';
 	import { campaignsStore } from '$lib/store';
+	import CampaignsListDetails from './CampaignsListDetails.svelte';
 
 	const {
 		campaigns,
@@ -48,25 +49,7 @@
 			{/each}
 		</List>
 	</div>
-	<div class="campaign-detail">
-		<h2>{$selectedCampaign.name}</h2>
-		<p>{$selectedCampaign.description}</p>
-		<OrdelSection title="Participation" subtitle="1500+ displays">
-			<p>to do</p>
-		</OrdelSection>
-		<OrdelSection title="Rankings" subtitle="700+ votes">
-			<p>to do</p>
-		</OrdelSection>
-		<OrdelSection title="Objects" subtitle="{$selectedCampaign.objects.length} objects">
-			<ul>
-				{#each $selectedCampaign.objects as obj}
-					<li>
-						<img src={obj.imageUrl} alt="" style="width: 150px; height: 150px;" />
-					</li>
-				{/each}
-			</ul>
-		</OrdelSection>
-	</div>
+	<CampaignsListDetails campaign={$selectedCampaign} />
 </section>
 
 <style>
@@ -81,12 +64,6 @@
 		width: 40%;
 	}
 
-	.campaign-detail {
-		background-color: white;
-		padding: 1rem;
-		width: 60%;
-	}
-
 	.campaign-list-infos {
 		display: flex;
 		flex-direction: column;
@@ -99,17 +76,5 @@
 
 	.nb-objects {
 		font-size: 0.75rem;
-	}
-
-	ul {
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-		max-width: 100%;
-		padding: 0;
-	}
-
-	li {
-		margin: 5px;
 	}
 </style>
