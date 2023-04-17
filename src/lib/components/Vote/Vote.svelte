@@ -7,6 +7,9 @@
 
 	export let campaign: Campaign;
 
+	const nbProposals = campaign.objects.length * 2;
+	let nbCurrentProposals = 0;
+
 	let proposalsLoading: boolean = true;
 	let proposals: CampaignObject[] = [];
 	const votes = campaign.objects.reduce(
@@ -23,6 +26,7 @@
 		const votedProposal = event.detail.proposal;
 		votes[votedProposal.id]++;
 		pick2Proposals();
+		nbCurrentProposals++;
 	};
 
 	onMount(() => pick2Proposals());
@@ -33,6 +37,9 @@
 		<div style="position: absolute; display: flex; justify-content: center; margin: 100px 0;">
 			<CircularProgress style="height: 64px; width: 64px;" indeterminate />
 		</div>
+	{:else if nbCurrentProposals >= nbProposals}
+		<p>🎉 Job's done 💪</p>
+		<p>Thanks for your participation.</p>
 	{:else}
 		{#each proposals as proposal, i}
 			<VoteCard on:proposalVoted={proposalVotedHandler} {proposal} proposalIndex={i + 1} />
