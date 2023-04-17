@@ -1,18 +1,7 @@
 <script lang="ts">
-	type CursorPosition = {
-		x: number;
-		y: number;
-	};
-	let cursorPosition: CursorPosition = { x: 0, y: 0 };
-	// $: xBase = cursorPosition.x / 4 - cursorPosition.x / 6;
 	const transitionDurationBase = 3;
-
-	const mousemoveHandler = (event: MouseEvent) => {
-		cursorPosition = { x: event.x, y: event.y };
-	};
 </script>
 
-<svelte:window on:mousemove={mousemoveHandler} />
 <svg
 	width="100vw"
 	height="253"
@@ -21,13 +10,6 @@
 	xmlns="http://www.w3.org/2000/svg"
 >
 	<g clip-path="url(#clip0_192_5062)">
-		<!-- <path
-			style={`transform:  translate( ${xBase}px,0px); transition-duration: ${
-				transitionDurationBase - 0.08
-			}s;`}
-			d="M425 133L450.981 178H399.019L425 133Z"
-			fill="#6750A4"
-		/> -->
 		<path
 			style={`animation-duration: ${transitionDurationBase - 0.08}s;`}
 			d="M425 133L450.981 178H399.019L425 133Z"
