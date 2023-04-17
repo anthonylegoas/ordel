@@ -14,7 +14,8 @@
 		<h1 class="name">{campaign.name}</h1>
 		<p class="description">{campaign.description}</p>
 		<Vote {campaign} />
-		<p>Click on the proposal you wish to retain (or use its keyboard shortcut)</p>
+		<p>Click on the proposal you wish to retain</p>
+		<!-- <p>Click on the proposal you wish to retain (or use its keyboard shortcut)</p> -->
 	{/if}
 </section>
 
