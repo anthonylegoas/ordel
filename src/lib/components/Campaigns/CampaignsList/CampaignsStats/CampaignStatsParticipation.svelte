@@ -35,7 +35,7 @@
 		{data}
 		type="bar"
 		height={180}
-		colors={['#843bad']}
+		colors={['#21005D']}
 		barOptions={{
 			stacked: true,
 			spaceRatio: 0.1
