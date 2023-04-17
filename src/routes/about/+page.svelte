@@ -3,6 +3,11 @@
 	import { OrdelTeam } from '$lib/components';
 </script>
 
+<svelte:head>
+	<title>About</title>
+	<meta name="description" content="Ordel - about" />
+</svelte:head>
+
 <h1>About Ordel</h1>
 <div class="section-1">
 	<BannerBis />

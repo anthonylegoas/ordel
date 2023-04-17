@@ -10,6 +10,11 @@
 	const campaign = data.campaignId ? $campaigns.find((v) => v.id === data.campaignId) : null;
 </script>
 
+<svelte:head>
+	<title>Campaign {data.campaignId}</title>
+	<meta name="description" content="Ordel - campaign" />
+</svelte:head>
+
 <section>
 	{#if campaign}
 		<h1 class="name">You are invited to vote on <b>{campaign.name}</b></h1>

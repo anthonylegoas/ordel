@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="TUX - blabla" />
+	<meta name="description" content="Ordel - home" />
 </svelte:head>
 
 <section>

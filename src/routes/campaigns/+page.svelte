@@ -4,6 +4,11 @@
 	import { CampaignsList } from '$lib/components';
 </script>
 
+<svelte:head>
+	<title>My campaigns</title>
+	<meta name="description" content="Ordel - my campaigns" />
+</svelte:head>
+
 <Row>
 	<Section>
 		<h1>My campaigns</h1>

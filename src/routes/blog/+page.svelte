@@ -29,6 +29,11 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Blog</title>
+	<meta name="description" content="Ordel - blog" />
+</svelte:head>
+
 <h1>So you wanna sort your sh*t out</h1>
 
 <div class="layout">
