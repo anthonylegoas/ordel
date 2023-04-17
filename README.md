@@ -1,38 +1,37 @@
-# create-svelte
+# Ordel
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+It's now easier to order things. All kinds of things.
 
-## Creating a project
+👉 [https://ordel-mvp.vercel.app/](https://ordel-mvp.vercel.app/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+[![Ordel pitch](https://ordel-mvp.vercel.app/ordel-pitch.mp4)](https://ordel-mvp.vercel.app/ordel-pitch.mp4)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Helping decisions in a complex world
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Ordel will not make simple decisions for you in a complex world. Only human beings are able to do that and it takes much more than algorithms to make good ones. But hopefully Ordel can help instruct part of your decisions: the ones that partly rely on a bit of tidiness and order.
 
-## Developing
+When everything is a mess, a good place to start to figure things out is to try and sort them. This won’t be enough but it’s a start. What Ordel gives you is a tool to do that on your own or collectively if you want to add some collective intelligence to the process.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Democracy to order, your final cut to decide
 
-```bash
-npm run dev
+Ordel is also a good tool to support democracy because it offers different kinds of ballots and sorting algorithms. Read more in the Frequently Asked Questions about Ordel.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## We are Ordel
 
-## Building
+### Karine
 
-To create a production version of your app:
+Her smartphone apps are sorted by color, her books by size and author. She devotes much of her work to defining, sorting and connecting things (the lost art of taxonomy).
 
-```bash
-npm run build
-```
+She had that crazy Ordel idea and is responsible for what is not code in the product.
 
-You can preview the production build with `npm run preview`.
+- Twitter: [@karinesabatier](https://twitter.com/karinesabatier)
+- LinkedIn: [@karinesabatier](https://linkedin.com/in/karinesabatier)
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### Anthony
+
+Every single line of code in Ordel is his and has been crafted with love (and Svelte), to keep it simple and fast.
+
+As he describes himself as "a bit" rigorous, it was only natural for Anthony to participate in this beautiful enterprise of tidying up the world a bit.
+
+- Twitter: [@anthony_legoas](https://twitter.com/anthony_legoas)
+- LinkedIn: [@anthonylegoas](https://linkedin.com/in/anthonylegoas)
