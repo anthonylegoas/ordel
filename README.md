@@ -4,7 +4,7 @@ It's now easier to order things. All kinds of things.
 
 👉 [https://ordel-mvp.vercel.app/](https://ordel-mvp.vercel.app/)
 
-[![Ordel pitch](https://ordel-mvp.vercel.app/ordel-pitch.mp4)](https://ordel-mvp.vercel.app/ordel-pitch.mp4)
+[![Ordel pitch](https://ordel-mvp.vercel.app/ordel-screenshot-home.png)](https://ordel-mvp.vercel.app/ordel-pitch.mp4)
 
 ## Helping decisions in a complex world
 
