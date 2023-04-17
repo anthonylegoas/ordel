@@ -1,0 +1,1 @@
+export { default as OrdelTeam } from './OrdelTeam.svelte'
